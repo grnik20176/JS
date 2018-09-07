@@ -1,0 +1,11 @@
+//Теранарный оператор
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+
+
+//работа со строками (array methods)
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
