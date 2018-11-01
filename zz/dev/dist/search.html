@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Zzgays</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/all.css" media="all">
+</head>
+
+<body>
+	<div class="wrapper ">
+		<div class="header">
+			<div class="container">
+				<div class="holder">
+					<div class="column">
+						<div class="logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+						<div class="lang">
+							<button type="button" class="button_lang">
+								<b>
+									<span class="flag">
+										<img src="images/flags/flag01.png" alt="">
+									</span>
+									<span class="flag_name">EN</span>
+									<i class="icon-arrow-down"></i>
+								</b>
+							</button>
+							<div class="droplang">
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<img src="images/flags/flag01.png" alt="">
+										<span>En</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="navigation_general">
+							<div class="item active">
+								<a href="#">Video</a>
+							</div>
+							<div class="item">
+								<a href="#">Photo</a>
+							</div>
+							<div class="item">
+								<a href="#">Categories</a>
+							</div>
+							<div class="item">
+								<a href="#">Channels</a>
+							</div>
+							<div class="item">
+								<a href="#">Community</a>
+							</div>
+							<div class="item second">
+								<a href="#">Login</a>
+							</div>
+							<div class="item second">
+								<a href="#">SignUp</a>
+							</div>
+							<div class="item last">
+								<a href="#">Upload</a>
+							</div>
+						</div>
+					</div>
+					<div class="column second">
+						<div class="search">
+							<form action="#">
+								<div class="wrap_input">
+									<input type="text" class="input" placeholder="Search">
+									<button type="submit" class="button_search">
+										<i class="icon-search"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="column">
+						<div class="panel_header">
+							<div class="item second">
+								<button type="button" class="btn_search">
+									<i class="icon-search"></i>
+								</button>
+							</div>
+							<div class="item second">
+								<button type="button" class="button upload" data-open="upload-video__opened" data-parent="#upload">
+									<b>
+										<i class="icon-upload"></i>
+										<span>Upload</span>
+									</b>
+								</button>
+							</div>
+							<div class="item">
+								<a href="#" class="btn login" data-open="login-form" data-parent="#login">
+									<i class="icon-in"></i>
+									<span>Login</span>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#" class="btn sign" data-open="login-sign" data-parent="#signup">
+									<i class="icon-user"></i>
+									<span>Sing In</span>
+								</a>
+							</div>
+						</div>
+						<button type="button" class="hamburger">
+							<span></span>
+						</button>
+					</div>
+				</div>
+				<div class="bottom_header">
+					<div class="hold">
+						<div class="navigation">
+							<div class="item active">
+								<a href="#">Video</a>
+							</div>
+							<div class="item">
+								<a href="#">Photo</a>
+							</div>
+							<div class="item">
+								<a href="#">Categories</a>
+							</div>
+							<div class="item">
+								<a href="#">Channels</a>
+							</div>
+							<div class="item">
+								<a href="#">Community</a>
+							</div>
+						</div>
+						<div class="second">
+							<button type="button" class="button" data-open="upload-video__opened">
+								<b>
+									<i class="icon-upload"></i>
+									<span>Upload</span>
+								</b>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top-menu_wrapper login-wrapper" id="login">
+			<div class="top-menu_content">
+				<div class="top-menu_logo">
+					<img src="images/content/form_logo.png" alt="">
+				</div>
+				<div class="form_wraper">
+					<form class="form" action="/" data-form="ajax" method="post">
+						<div class="form_title-holder">
+							<span class="form_title">Log In</span>
+							<a href="/signup/" class="form_white-link" data-open="login-sign" data-parent="#signup">Or Sign Up</a>
+							<div class="generic-error hidden">
+								Some error text
+							</div>
+						</div>
+						<div class="row">
+							<label for="login_username" class="field-label required">Your Login</label>
+							<input type="text" name="username" id="login_username" class="textfield" placeholder="Your Login" value="">
+							<div class="field-error down"></div>
+						</div>
+
+						<div class="row">
+							<label for="login_pass" class="field-label required">Pasword</label>
+							<input type="password" name="pass" id="login_pass" placeholder="Pasword" class="textfield" value="">
+							<div class="field-error down"></div>
+						</div>
+
+						<div class="row">
+							<input type="checkbox" name="remember_me" id="login_remember_me" class="checkbox" value="1">
+							<label for="login_remember_me" class="checkbox-label"> <i class="icon-check"></i> Remembr My</label>
+							<div class="links">
+								<a href="https://www.kvs-demo.com/reset-password/" class="violet-link">Forgot pasword</a>
+								<button type="submit" class="submit">
+									<span>Log in</span>
+								</button>
+							</div>
+						</div>
+						<input type="hidden" name="action" value="login">
+						<input type="hidden" name="email_link" value="https://www.kvs-demo.com/email/">
+					</form>
+				</div>
+				<a href="#" class="top-menu_close" data-open="login-form" data-parent="#login">
+					<i class="icon-close_tiny">
+					</i>
+					Close
+				</a>
+			</div>
+		</div>
+		<div class="top-menu_wrapper sign-wrapper" id="signup">
+			<div class="top-menu_content">
+				<div class="top-menu_logo">
+					<img src="images/content/form_logo.png" alt="">
+				</div>
+				<div class="form_wraper">
+					<div class="top-menu_left-column">
+						<div class="large_title">
+							Discover all the possibilities of ZZGAYS.com Community!!
+						</div>
+						<ul class="list-benefits">
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								Great social network with real users
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								Upload your own videos and pictures
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								Download any videos and pictures
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								Access to comments
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								Meeting new people
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								The ability to create your own list of favorite videos and photos
+							</li>
+							<li class="list-benefits_item">
+								<img src="images/content/form_logo.png" alt="">
+								The ability to watch videos and photos have been uploaded to no public viewing
+							</li>
+						</ul>
+					</div>
+					<form class="form" action="/" data-form="ajax" method="post">
+						<div class="form_title-holder">
+							<span class="form_title">Sign Up</span>
+							<a href="/signup/" class="form_white-link" data-open="login-form" data-parent="#login">Or Log in</a>
+							<div class="generic-error hidden">
+								Some error text
+							</div>
+						</div>
+						<div class="row">
+							<label for="signup_username" class="field-label required">Username</label>
+							<input type="text" name="username" maxlength="100" id="signup_username" class="textfield" placeholder="Username"
+							 value="">
+							<div class="field-error down"></div>
+						</div>
+
+						<div class="row">
+							<label for="signup_pass" class="field-label required">Pasword</label>
+							<input type="password" name="pass" id="signup_pass" placeholder="Pasword" class="textfield" value="">
+							<div class="field-error down"></div>
+						</div>
+						<div class="row">
+							<label for="signup_pass2" class="field-label required">Pasword Confirmation</label>
+							<input type="password" name="pass2" id="signup_pass2" placeholder="Pasword Confirmation" class="textfield" value="">
+							<div class="field-error down"></div>
+						</div>
+						<div class="row">
+							<label for="signup_email" class="field-label required">Username</label>
+							<input type="text" name="email" maxlength="100" id="signup_email" class="textfield" placeholder="Username" value="">
+							<div class="field-error down"></div>
+						</div>
+						<div class="row">
+							<input type="checkbox" name="remember_me" id="login_remember_me1" class="checkbox" value="1">
+							<label for="login_remember_me1" class="checkbox-label"> <i class="icon-check"></i> Remembr My</label>
+							<div class="links">
+								<a href="https://www.kvs-demo.com/reset-password/" class="violet-link">Forgot pasword</a>
+								<button type="submit" class="submit">
+									<span>sign in</span>
+								</button>
+							</div>
+						</div>
+						<input type="hidden" name="action" value="login">
+						<input type="hidden" name="email_link" value="https://www.kvs-demo.com/email/">
+					</form>
+				</div>
+				<a href="#" class="top-menu_close" data-open="login-sign" data-parent="#signup">
+					<i class="icon-close_tiny">
+					</i>
+					Close
+				</a>
+			</div>
+		</div>
+		<div class="top-menu_wrapper upload-wrapper first" id="upload">
+			<div class="top-menu_content">
+				<div class="top-menu_logo">
+					<img src="images/content/form_logo.png" alt="">
+				</div>
+				<div class="form_wraper">
+					<div class="success" data-fancybox-redirect-to="">
+						Some success message.
+					</div>
+					<form class="form" action="/" data-form="ajax" method="post">
+						<div class="form_title-holder">
+							<span class="form_title"> 
+								Upload Video
+							</span>
+							<a href="/upload/" class="form_white-link" data-open="upload-album__opened">Upload photo</a>
+							<div class="generic-error hidden">
+								Some error text
+							</div>
+						</div>
+						<div class="row">
+							<label class="upload-label" for="file">Uplod file from your local disk</label>
+							<div class="file-control">
+								<input type="text" class="textfield" placeholder="" readonly="">
+								<div class="upload_anchor">Choose file</div>
+								<input type="file" name="content" class="file" id="file">
+								<div class="field-error down"></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="links">
+								<!-- <button type="submit" class="submit">
+									<span>continue</span>
+								</button> -->
+								<button type="submit" class="submit" data-open="upload-video__opened-next" data-parent="#uplod_next">
+									<span>continue</span>
+								</button>
+							</div>
+						</div>
+						<div class="row row__bottom-info">
+							<div class="info-column">
+								Only upload videos that you made 
+								or that you are authorized to use.
+							</div>
+							<div class="info-column">
+								All videos are subject to removal 
+								by site administration without 
+								prior notice
+							</div>
+						</div>
+						<input type="hidden" name="action" value="login">
+						<input type="hidden" name="email_link" value="https://www.kvs-demo.com/email/">
+					</form>
+				</div>
+				<a href="#" class="top-menu_close" data-open="upload-video__opened" data-parent="#upload">
+					<i class="icon-close_tiny">
+					</i>
+					Close
+				</a>
+			</div>
+		</div>
+		<div class="top-menu_wrapper upload-wrapper next" id="uplod_next">
+			<div class="top-menu_content">
+				<div class="top-menu_logo">
+					<img src="images/content/form_logo.png" alt="">
+				</div>
+				<div class="form_wraper">
+					<div class="success" data-fancybox-redirect-to="">
+						Some success message.
+					</div>
+					<form class="form" action="/" data-form="ajax" method="post">
+						<div class="form_title-full-row">
+							<div class="form_title-holder">
+								<span class="form_title">
+									Upload Video
+								</span>
+								<a href="/upload/" class="form_white-link" data-open="upload-album__opened">Upload photo</a>
+								<div class="generic-error hidden">
+									Some error text
+								</div>
+							</div>
+						</div>
+						<div class="section-one">
+							<div class="row">
+								<label for="edit_video_title" class="upload-label required">Title</label>
+								<input type="text" name="title" id="edit_video_title" class="textfield" value="" placeholder="Some text"
+								 maxlength="55">
+								<div class="field-error down"></div>
+							</div>
+
+							<div class="row">
+								<label for="edit_video_description" class="upload-label required">
+									Description
+
+								</label>
+								<textarea name="description" id="edit_video_description" class="textarea" rows="7" placeholder="Some text"></textarea>
+								<div class="field-error down"></div>
+							</div>
+
+							<div class="row list-selector" data-name="category_ids" data-selector="/categories-selector/"
+							 data-selected="">
+								<label for="edit_video_categories" class="upload-label required">
+									Categories
+									<span class="notify">
+										please select no more than 3 categories
+									</span>
+								</label>
+								<select class="js-multy-select" id="edit_video_categories" name="state" multiple="multiple">
+									<option value="AL">Alabama</option>
+									<option value="WY">Wyoming</option>
+									<option value="Sm">Some</option>
+									<option value="Sm2">Some2</option>
+								</select>
+								<div class="field-error down"></div>
+							</div>
+
+							<div class="row">
+								<label for="edit_video_tags" class="upload-label required">Tags</label>
+								<input type="text" name="tags" id="edit_video_tags" class="textfield" value="" placeholder="Must be separated by comma">
+								<div class="field-error down"></div>
+							</div>
+
+							<div class="row list-selector" data-name="model_ids" data-selector="https://www.kvs-demo.com/models-selector/"
+							 data-selected="">
+								<label for="edit_video_models" class="upload-label">
+									Models
+									<span class="notify">
+										please select models in this album
+									</span>
+								</label>
+								<select class="js-multy-select" id="edit_video_models" name="state" multiple="multiple">
+									<option value="AL">Alabama</option>
+									<option value="WY">Wyoming</option>
+									<option value="Sm">Some</option>
+									<option value="Sm2">Some2</option>
+								</select>
+								<div class="field-error down"></div>
+							</div>
+
+							<div class="row">
+								<label for="edit_video_screenshot" class="upload-label">Change main screen</label>
+								<div class="file-control">
+									<input type="text" class="textfield" placeholder="Select image 248x186" readonly="">
+									<div class="button "></div>
+									<input type="file" name="screenshot" id="edit_video_screenshot" class="file">
+									<div class="field-error down"></div>
+								</div>
+							</div>
+						</div>
+						<div class="section-two">
+							<div class="row row__preview">
+								<span class="upload-label">
+									Video PREVIEW
+									<span class="notify">
+										640x360, 1:00, 5,26 Mb
+									</span>
+								</span>
+							</div>
+							<div class="row row__preview">
+								<div class="preview ">
+									<img class="absolute-img" src="https://www.kvs-demo.com/upload-video-preview/75786608443330799391232885975310/">
+								</div>
+							</div>
+							<div class="row list-selector" data-name="category_ids" data-selector="https://www.kvs-demo.com/categories-selector/"
+							data-selected="">
+							   <label for="edit_video_sponsor" class="upload-label required">
+									Sponsor
+							   </label>
+							   <select class="js-multy-select" id="edit_video_sponsor" name="sponsor" multiple="multiple">
+								   <option value="AL">Alabama</option>
+								   <option value="WY">Wyoming</option>
+								   <option value="Sm">Some</option>
+								   <option value="Sm2">Some2</option>
+							   </select>
+							   <div class="field-error down"></div>
+						   </div>
+						   <div class="row list-selector" data-name="category_ids" data-selector="https://www.kvs-demo.com/categories-selector/"
+							data-selected="">
+							   <label for="edit_video_is_private" class="upload-label required">
+									Visibility
+							   </label>
+							   <select class="js-multy-select" id="edit_video_is_private" name="is_private" >
+								   <option id="edit_video_is_private_0" name="is_private" value="0">Alabama</option>
+								   <option id="edit_video_is_private_1" name="is_private" value="1">Wyoming</option>
+							   </select>
+							   <div class="field-error down"></div>
+						   </div>
+						</div>
+					</form>
+				</div>
+				<a href="#" class="top-menu_close" data-open="upload-video__opened" data-parent="#uplod_next">
+					<i class="icon-close_tiny">
+					</i>
+					Close
+				</a>
+			</div>
+		</div><div class="main view_holder">
+	<div class="row_container">
+		<div class="dark-holder_advaned-search">
+				<div class="heading">
+					<h2 class="title">Advanced search</h2>
+				</div>
+			<div class="advaned-search_holder">
+				<form action="" class="advanced-search">
+					<div class="list-selector_advanced">
+						<select class="js-select" id="search-type" name="type">
+							<option value="AL">Video</option>
+							<option value="WY">Some1</option>
+							<option value="Sm">Some2</option>
+							<option value="Sm2">Some3</option>
+						</select>
+						<div class="field-error down"></div>
+					</div>
+					<div class="serach-result_btn">
+						<span class="serach-result">Anal</span>
+						<a href="#" class="serach-result_clear">
+							<i class="icon-close_tiny"></i>
+						</a>
+					</div>
+					<div class="advanced-search_input-holder">
+						<input type="text" name="search_adv" id="serch-adv_input" placeholder="Search">
+					</div>
+					<button class="advanced-search_btn-search">
+						<i class="icon-search"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="container container-search">
+			<div class="content_grid">
+				<div class="row_container">
+					<div class="heading">
+						<div class="title">
+							<h2>Search for:</h2>
+							<div class="search-title">
+								Japanese Anal (in <a href="#">Anal</a>, <a href="#">Asian categories</a>)
+							</div>
+						</div>
+						<div class="heading_buttons">
+							<div class="drop_sorting">
+								<button type="button" class="btn btnSort">
+									<b>
+										<span>Most Relevance</span>
+										<i class="icon-arrow-down"></i>
+									</b>
+								</button>
+								<div class="dropabble">
+									<a href="#" class="item">New News</a>
+									<a href="#" class="item">Old News</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="thumbs">
+						<div class="thumb">
+							<div class="th closed">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="splash_privat">
+										<i class="icon-face"></i>
+										<span>Private Video</span>
+									</div>
+								</div>
+								<div class="tools_access">
+									<a href="#" class="btn_access">gain access</a>
+								</div>
+							</div>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">RealityKings - Euro Sex
+										Parties - Two On One</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">RealityKings - Euro Sex
+										Parties - Two On One</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">Hottest Video Today</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="thumb">
+							<a href="#" class="th">
+								<div class="wrap_image">
+									<img src="images/content/image01.jpg" alt="">
+									<div class="sticky">
+										<div class="item">
+											<div class="quality">hd</div>
+										</div>
+										<div class="item">
+											<div class="time">3:30</div>
+										</div>
+									</div>
+								</div>
+								<div class="tools">
+									<div class="title">RealityKings - Euro Sex
+										Parties - Two On One</div>
+									<div class="columns">
+										<div class="column">
+											<i class="icon-eye"></i>
+											<span>55</span>
+										</div>
+										<div class="column">
+											<i class="icon-hand-like"></i>
+											<span>55%</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="load-more_holder">
+						<a href="#" class="load-more">Load More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="footer">
+			<div class="wrapped">
+				<div class="holder">
+					<div class="container">
+						<div class="column">
+							<div class="footer_logo">
+								<a href="#">
+									<img src="images/logo.png" alt="">
+								</a>
+							</div>
+							<div class="social">
+								<div class="item">
+									<a href="#">
+										<i class="icon-instagram"></i>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<i class="icon-twitter"></i>
+									</a>
+								</div>
+								<div class="item">
+									<a href="#">
+										<i class="icon-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="column second">
+							<div class="list_wrapped">
+								<ul class="list">
+									<li class="item">
+										<a href="#">Terms &amp; Conditions</a>
+									</li>
+									<li class="item">
+										<a href="#">Privacy Policy</a>
+									</li>
+									<li class="item">
+										<a href="#">DMCA</a>
+									</li>
+									<li class="item">
+										<a href="#">2257</a>
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="item">
+										<a href="#">Content Partners</a>
+									</li>
+									<li class="item">
+										<a href="#">Advertise</a>
+									</li>
+									<li class="item">
+										<a href="#">Webmasters</a>
+									</li>
+									<li class="item">
+										<a href="#">Model Payment Program</a>
+									</li>
+									<li class="item">
+										<a href="#">Press</a>
+									</li>
+								</ul>
+								<ul class="list">
+									<li class="item">
+										<a href="#">Pornhub Blog</a>
+									</li>
+									<li class="item">
+										<a href="#">Insights Blog</a>
+									</li>
+									<li class="item">
+										<a href="#">Sexual Wellness Center</a>
+									</li>
+									<li class="item">
+										<a href="#">Mobile / Tablet</a>
+									</li>
+									<li class="item">
+										<a href="#">Visually Impaired</a>
+									</li>
+									<li class="item">
+										<a href="#">More</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<div class="container">
+						<div class="text">Users are prohibited from posting any material depicting individuals under the age of 18. ALL RIGHTS
+							RESERVED.
+							Reproduction in any form is forbidden.</div>
+						<div class="copy">Copyright &copy; 2017 PunishBang.com</div>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="sticky_filter onClick">
+				<i class="icon-params"></i>
+			</button>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+		<script src="js/assets.js"></script>
+		<script src="js/main.js"></script>
+	</div>
+</body>
+</html>

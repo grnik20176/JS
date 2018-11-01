@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?agbs4a');
+  src:  url('fonts/icomoon.eot?agbs4a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?agbs4a') format('truetype'),
+    url('fonts/icomoon.woff?agbs4a') format('woff'),
+    url('fonts/icomoon.svg?agbs4a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-if_plus_circle_1303892:before {
+  content: "\e91c";
+}
+.icon-if_file-download_326639:before {
+  content: "\e91d";
+}
+.icon-if_share_353438:before {
+  content: "\e91e";
+}
+.icon-if_icon-16-flag_315213:before {
+  content: "\e91b";
+}
+.icon-if_photo-24_103171:before {
+  content: "\e91a";
+}
+.icon-if_146_RoundedActionLeft_183526:before {
+  content: "\e919";
+}
+.icon-if_ic_arrow_drop_down_48px_352021:before {
+  content: "\e918";
+}
+.icon-clapperboard:before {
+  content: "\e917";
+}
+.icon-if_cancel_1303884:before {
+  content: "\e915";
+}
+.icon-if_check-mark_511949:before {
+  content: "\e916";
+}
+.icon-face:before {
+  content: "\e911";
+}
+.icon-arrow-down:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-comment:before {
+  content: "\e903";
+}
+.icon-eye:before {
+  content: "\e904";
+}
+.icon-hand-like:before {
+  content: "\e905";
+}
+.icon-in:before {
+  content: "\e906";
+}
+.icon-infinity:before {
+  content: "\e907";
+}
+.icon-menu-play:before {
+  content: "\e908";
+}
+.icon-new:before {
+  content: "\e909";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-upload:before {
+  content: "\e90b";
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-params:before {
+  content: "\e914";
+}
+.icon-close:before {
+  content: "\e912";
+}
+.icon-facebook:before {
+  content: "\e90e";
+}
+.icon-twitter:before {
+  content: "\e90f";
+}
+.icon-instagram:before {
+  content: "\e910";
+}
+.icon-heart:before {
+  content: "\e9da";
+}
+.icon-filter:before {
+  content: "\e913";
+}
+.icon-search:before {
+  content: "\e90d";
+}
