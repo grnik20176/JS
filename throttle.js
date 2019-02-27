@@ -1,5 +1,5 @@
 window.addEventListener("resize", throttle(initExpandingText, 500));
-    function throttle (callback, limit) {
+    function throttle(callback, limit) {
         var wait = false;                  
         return function () {               
             if (!wait) {                   

@@ -12,3 +12,25 @@ https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Ar
 
 //Редактирование страницы в живую
 document.body.contentEditable = true
+=============================
+importScripts
+=============================
+Пример боди клик и поиск слова не входящего в состав другого лова
+function initTab() {
+    var parentNode = document.querySelector('body');
+	parentNode.addEventListener('click', function(e) {
+        console.log(e.target.classList.value.search(  ));
+		if (e.target.classList.value.search(/[^\s]*js-toggle(?!\S)/i) > -1) {
+			var openedTarget = document.querySelector('[data-opened]');
+            if (openedTarget) {
+                openedTarget.classList.add('hidden-tab');
+                    openedTarget.removeAttribute('data-opened');
+                    document.querySelector('.js-toggle.active').classList.remove('active');
+                    e.target.classList.add('active');
+                var toggleTarget = document.getElementById(e.target.getAttribute('data-block'));
+                toggleTarget.classList.remove('hidden-tab');
+                toggleTarget.setAttribute('data-opened', 'true');
+            }    
+		}
+	});
+}
