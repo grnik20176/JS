@@ -1,0 +1,250 @@
+<% var data = {
+  title: "Upload Video 2",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box show upload-video">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Свежее порно
+					</h1>
+				</div>
+				<div class="sort-holder user-video">	
+					<div class="upload-step">
+						<span class="dec">Мои видео</span>
+						/ Загрузка видео  — 
+						<span class="dec">Шаг 2</span>
+					</div>
+				</div>
+				<div class="sort-holder">	
+					<div class="sort">
+						<a href="#" class="selected active">
+							<span class="text">
+								Избранное
+							</span>
+						</a>
+					</div>
+					<div class="sort">
+						<a href="#" class="selected">
+							<span class="text">
+								Добавленные
+							</span>
+						</a>
+					</div>
+					<div class="sort plus-video">
+						<a href="#" class="selected">
+							<i class="icon-plus"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="panel-holder">
+					<div class="panel">
+						<div class="block-holder user-profile">
+							<div class="avatar-holder">
+								<img src="img/user-1.png" alt="user">
+								<div class="icon-holder">
+									<a href="#" class="edit-user">
+										<i class="icon-settings"></i>
+									</a>
+									<a href="#" class="exit-user">
+										<i class="icon-exit"></i>
+									</a>
+								</div>
+							</div>
+							<div class="user-info">
+								<div class="user-name js-user-info">
+									<span class="text">Username</span>
+									<i class="icon-arrow-down"></i>
+								</div>
+								<div class="user-online">
+									<span class="text">Online</span>
+								</div>
+								<div class="rating">
+									(<span class="text">рейтинг</span> — <span class="color">3151</span>)
+								</div>
+							</div>
+							<div class="info-user">
+								<div class="row">
+									Зарегестрирован:
+									<span class="color">19 лет</span>
+								</div>
+								<div class="row">
+									Возраст:
+									<span class="color">31.10.2018</span>
+								</div>
+								<div class="row">
+									Семейное положение:
+									<span class="color">Гетеросексуал</span>
+								</div>
+								<div class="row">
+									Ориентация:
+									<span class="color">Российская Федерация</span>
+								</div>
+								<div class="row">
+									Страна:
+									<span class="color">Не женат</span>
+								</div>
+								<div class="row">
+									Город:
+									<span class="color">Уфа</span>
+								</div>
+								<div class="token-user js-info-holder">
+									<span class="quantity">ТОКЕНЫ - 40</span>
+									<div class="icon-token">
+										<img src="img/token.png" alt="">
+										<span class="icon js-info">?</span>
+									</div>
+									<div class="js-info-popup">
+										Токены нельзя купить. Их можно только заработать активностью на сайте
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="block-holder user-menu">
+							<div class="user-item">
+								<a href="#" class="link ">
+									<span class="text">
+										<i class="icon-user"></i>
+										Обзор профиля
+									</span>
+								</a>
+							</div>
+							<div class="user-item">
+								<a href="#" class="link active">
+									<span class="text">
+										<i class="icon-mail"></i>
+										Мои сообщения
+									</span>
+									<span class="quantity">
+										12
+									</span>
+								</a>
+							</div>
+							<div class="user-item">
+								<a href="#" class="link">
+									<span class="text">
+										<i class="icon-friends"></i>
+										Мои друзья
+									</span>
+									<span class="quantity">
+										3
+									</span>
+								</a>
+							</div>
+							<div class="user-item">
+								<a href="#" class="link">
+									<span class="text">
+										<i class="icon-play2"></i>
+										Мои видео
+									</span>
+									<span class="quantity">
+										54
+									</span>
+								</a>
+							</div>
+							<div class="user-item">
+								<a href="#" class="link">
+									<span class="text">
+										<i class="icon-camera"></i>
+										Мои фото
+									</span>
+									<span class="quantity">
+										2121
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-holder upload-form">
+					<form class="form second" action="#">
+						<div class="columns">
+							<div class="column">
+								<p class="title-column">Информация о видео</p>
+								<div class="rows">
+									<div class="row">
+										<label class="label">Название альбома (*):</label>
+										<input type="text" class="input " placeholder="" readonly="">
+									</div>
+								</div>
+								<div class="rows">
+									<div class="row">
+										<label class="label">Описание (*):</label>
+										<textarea class="input textarea"></textarea>
+									</div>
+								</div>
+								<div class="rows">
+									<div class="row">
+										<label class="label">Категории (*):</label>
+										<input type="text" class="input " placeholder="Вы можете выбрать не более 3 категорий" readonly="">
+									</div>
+								</div>
+								<div class="rows">
+									<div class="row">
+										<label class="label">Модели (*):</label>
+										<input type="text" class="input " placeholder="Выберите моделей из этого видео" readonly="">
+									</div>
+								</div>
+								<div class="rows">
+									<div class="row">
+										<div class="file-control">
+											<input type="text" class="textfield input error" placeholder="" readonly="">
+											<div class="button">Выбрать</div>
+											<input type="file" name="content" class="file input">
+										</div>
+									</div>
+								</div>
+
+								<div class="rows">
+									<div class="row">
+										<label class="label">Область видимости:</label>
+										<div class="block-radios">
+											<div class="row">
+												<input type="radio" id="flag_man" class="radio" name="gender">
+												<label class="label" for="flag_man">Публичный, доступ для всех</label>
+											</div>
+											<div class="row">
+												<input type="radio" id="flag_man2" class="radio" name="gender">
+												<label class="label" for="flag_man2"><i class="icon-lock"></i> Личный, только для друзей</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="botton">
+									<button class="btn">
+										Продолжить 
+										<i class="icon-arrows"></i>
+									</button>
+								</div>
+							</div>
+							<div class="column">
+								<div class="preview">
+									<p class="title-column">Обзор видео</p>
+									<div class="img-preview">
+										<img src="img/img-1.jpg" alt="">
+										<div class="info-preview">
+											1920x1080, 24:45, 714,12mb
+										</div>
+									</div>
+								</div>
+								<p class="title-column">Правила загрузки</p>
+								<p class="text-column">Загружайте только те видео, которые вы сделали сами, или имеете право использовать.</p>
+								<p class="text-column">Любые видео могут быть удалены администрацией сайта без оповещения.</p>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

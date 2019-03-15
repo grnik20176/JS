@@ -1,0 +1,333 @@
+<% var data = {
+  title: "Partners",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box users-list show">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Поиск партнёра
+					</h1>
+				</div>
+				<div class="sort-holder">	
+					<div class="sort">
+						<a href="#" class="selected active">
+							<span class="text">
+								Активные
+							</span>
+						</a>
+					</div>
+					<div class="sort">
+						<a href="#" class="selected ">
+							<span class="text">
+								Новые
+							</span>
+						</a>
+					</div>
+					<div class="sort">
+						<a href="#" class="selected ">
+							<span class="text">
+								Онлайн
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="panel-holder" style="display: block;">
+					<div class="panel">
+						<div class="block-holder search-user form-holder">
+							<form action="#" class="form">
+								<div class="rows-holder">
+									<div class="rows">
+										<div class="row input-block">
+											<input type="text" class="input" placeholder="">
+											<a href="#" class="search-btn">
+												<i class="icon-search"></i>
+											</a>
+										</div>
+										<div class="row">
+											<div class="block-radios">
+												<label class="label">Ищу</label>
+												<div class="row">
+													<input type="radio" id="flag_man" class="radio" name="gender">
+													<label class="label" for="flag_man">Мужчину</label>
+												</div>
+												<div class="row">
+													<input type="radio" id="flag_women" class="radio" name="gender">
+													<label class="label" for="flag_women">Женщину</label>
+												</div>
+												<div class="row">
+													<input type="radio" id="flag_married_couple" class="radio" name="gender" >
+													<label class="label" for="flag_married_couple">Семейную пару</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Возраст</label>
+										</div>
+										<div class="range-slider-holder">
+											<div class="inform-holder">
+												<div class="inform-item">
+													<span class="text">от</span>
+													<div class="number js-from1">18</div>
+												</div>
+												<div class="inform-item">
+													<span class="text">до</span>
+													<div class="number js-to1">55</div>
+												</div>
+											</div>
+											<input type="text" class="js-range-slider1" name="my_range" value=""
+												data-type="double"
+												data-min="18"
+												data-max="100"
+												data-from="18"
+												data-to="55"
+												data-grid="true"
+											/>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Регион</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Страна</option>
+													<option value="2">Страна1</option>
+													<option value="3">Страна2</option>
+												</select>
+											</div>
+										</div>
+										<div class="row">
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Город</option>
+													<option value="2">Город1</option>
+													<option value="3">Город2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">
+												Рост 
+												<span class="small">см</span>
+											</label>
+										</div>
+										<div class="range-slider-holder">
+											<div class="inform-holder">
+												<div class="inform-item">
+													<span class="text">от</span>
+													<div class="number js-from2">150</div>
+												</div>
+												<div class="inform-item">
+													<span class="text">до</span>
+													<div class="number js-to2">175</div>
+												</div>
+											</div>
+											<input type="text" class="js-range-slider2" name="my_range" value=""
+												data-type="double"
+												data-min="120"
+												data-max="210"
+												data-from="150"
+												data-to="175"
+												data-grid="true"
+											/>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">
+												Вес  
+												<span class="small">кг</span>
+											</label>
+										</div>
+										<div class="range-slider-holder">
+											<div class="inform-holder">
+												<div class="inform-item">
+													<span class="text">от</span>
+													<div class="number js-from3">55</div>
+												</div>
+												<div class="inform-item">
+													<span class="text">до</span>
+													<div class="number js-to3">75</div>
+												</div>
+											</div>
+											<input type="text" class="js-range-slider3" name="my_range" value=""
+												data-type="double"
+												data-min="30"
+												data-max="160"
+												data-from="55"
+												data-to="75"
+												data-grid="true"
+											/>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row checkbox-holder">
+											<input id="search_members_only_with_avatar" type="checkbox" class="checkbox">
+											<label for="search_members_only_with_avatar" class="label">Только с фото</label>
+										</div>
+										<div class="row checkbox-holder">
+											<input id="search_members_only_online" type="checkbox" class="checkbox">
+											<label for="search_members_only_online" class="label">Онлайн</label>
+										</div>
+										<div class="show-more">
+											<a href="#" class="btn js-more-filters">
+												<span class="text">Ещё</span>
+												<i class="icon-arrow-down"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="more-filters">
+
+									<div class="rows">
+										<div class="row">
+											<label class="label">Цели знакомства</label>
+											<div class="form-control select-holder">
+												<select name="" id="" class="select" style="width: 100%;">
+													<option value="legno">Секс</option>
+													<option value="vetro">Секс на одну ночь</option>
+													<option value="alluminio">Свинг встречи</option>
+													<option value="alluminio">МЖМ</option>
+													<option value="alluminio">Создание брака</option>
+												</select>
+											</div>
+										
+											<div class="tags-area">
+												<ul>
+													<li class="item-tag">
+														<span class="text">Секс</span>
+														<span class="icon">x</span>
+													</li>
+													<li class="item-tag">
+														<span class="text">Секс на одну ночь</span>
+														<span class="icon">x</span>
+													</li>
+													<li class="item-tag">
+														<span class="text">Свинг встречи</span>
+														<span class="icon">x</span>
+													</li>
+													<li class="item-tag">
+														<span class="text">МЖМ</span>
+														<span class="icon">x</span>
+													</li>
+													<li class="item-tag">
+														<span class="text">Создание брака</span>
+														<span class="icon">x</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="tags-filter rows test-holder">
+										<div class="row">
+											<label class="label">Цели знакомства</label>
+											<div class="form-control select-holder">
+												<select name="" id="" class="select2" multiple data-title="Materiale anta" style="width: 100%;">
+													<option value="legno">Legno</option>
+													<option value="vetro">vetro</option>
+													<option value="alluminio">Alluminio</option>
+												</select>
+											</div>
+										
+											<div class="tags-area">
+												<ul>
+										
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="rows">
+										<div class="row">
+											<label class="label">Ориентация</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Select...</option>
+													<option value="2">Male</option>
+													<option value="3">Female</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Образование</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Select...</option>
+													<option value="2">Образование1</option>
+													<option value="3">Образование2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Место встречи</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Select...</option>
+													<option value="2">Место встречи1</option>
+													<option value="3">Место встречи2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Мобильность</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Select...</option>
+													<option value="2">Мобильность1</option>
+													<option value="3">Мобильность2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="rows">
+										<div class="row">
+											<label class="label">Мат.поддержка</label>
+											<div class="select-holder">
+												<select class="select" style="width: 100%;">
+													<option value="1">Select...</option>
+													<option value="2">Мат.поддержка1</option>
+													<option value="3">Мат.поддержка2</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="items-list">
+					<% for(var i=1; i<13; i++) {%>
+						<% var data1 = {
+							cut: i,
+							change: "",
+							friends: "",
+							age: "1" 
+						}; %>
+						<%= _.template(require('./../includes/user.html'))(data1) %>
+					<% } %>
+				</div>
+			</div>
+			<%= _.template(require('./../includes/pagination.html'))(data) %>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

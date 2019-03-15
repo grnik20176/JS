@@ -1,0 +1,42 @@
+<div class="item">
+	<% if ( cut > 22) { 
+		var cut = cut-22;
+	} %>
+
+	<a href="#" class="link">
+		<div class="img-holder<% if ( cut % 3) {%>  no-avatar<%} %>">
+			<% if ( cut % 3) {%> 
+				<img class="img" src="img/user-<%=cut%>.png" alt="img">
+			<%} else {%>
+				<div class="icon">
+					<i class="icon-camera-2"></i>
+				</div>
+			<%}%>
+			<div class="icon-online<% if ( cut % 2) {%>  online<%} %>"></div>
+		</div>
+		<div class="info-user">	
+			<p class="name"> 
+				Виолетта 
+			</p>
+			<% if ( age != '') {%> 
+				<div class="age">
+					Возраст: <%=cut%><%=cut%>
+				</div> 
+			<%}%>
+			<div class="rating">
+				(<span class="text">рейтинг</span> — <span class="color"><%=cut%><%=cut%><%=cut%></span>)
+			</div>
+
+		</div>
+	</a>
+	<div class="btn-holder">
+		<a href="#" class="btn">Написать сообщение</a>
+		<%if (friends == '') {%>
+			<a href="#" class="btn">Добавить в друзья</a>
+		<%} else {%>
+			<a href="#" class="btn">Удалить из друзей</a>
+		<%}%>
+	</div>
+</div>
+
+

@@ -1,0 +1,121 @@
+<% var data = {
+  title: "Presents",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="popup-holder">
+	<div class="presents-form">
+		<form action="#" class="form">
+			<div class="tabs">
+				<ul class="tabs-caption">
+					<li class="tab-btn active">
+						<span class="text">Подарки для Него</span>
+						<i class="icon-man"></i>
+					</li>
+					<li class="tab-btn">
+						<i class="icon-woman"></i>
+						<span class="text">Подарки для Неё</span>
+					</li>
+				</ul>
+				<div class="tabs-content active">
+					<div class="presents-items">
+						<% for(var i=1; i<21; i++) {%>
+							<%
+								var cut = i;
+								if ( cut > 8) { 
+									var cut = cut-8;
+								}
+								if ( cut > 8) { 
+									var cut = cut-8;
+								}
+							%>
+
+							<div class="item">
+								<div class="img-holder">
+									<img src="img/present-<%=cut%>.png" class="present" alt="<%=cut%>">
+									<div class="price-holder">
+										<img src="img/token.png" alt="1">
+										<span class="text">
+											<%=cut%><%=cut%><%=cut%>
+										</span>
+									</div> 
+								</div>
+							</div>
+						<%}%>
+					</div>
+				</div>
+				<div class="tabs-content">
+					<div class="presents-items">
+						<% for(var i=20; i>0; i--) {%>
+							<%
+								var cut = i;
+								if ( cut > 8) { 
+									var cut = cut-8;
+								}
+								if ( cut > 8) { 
+									var cut = cut-8;
+								}
+							%>
+
+							<div class="item">
+								<div class="img-holder">
+									<img src="img/present-<%=cut%>.png" class="present" alt="<%=cut%>">
+									<div class="price-holder">
+										<img src="img/token.png" alt="1">
+										<span class="text">
+											<%=cut%><%=cut%><%=cut%>
+										</span>
+									</div> 
+								</div>
+							</div>
+						<%}%>
+					</div>
+				</div>
+				<div class="btn-holder">
+					<a href="#" class="btn">
+						<span class="text">Показать больше</span>
+						<i class="icon-arrows"></i>
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="popup-holder">
+	<div class="presents-form">
+		<form action="#" class="form">
+			<div class="selected-present">
+				<div class="img-holder">
+					<img src="img/post-3.png" alt="">
+					<div class="price-present">
+						<img src="img/token.png" alt="1">
+						<span class="text">
+							999
+						</span>
+					</div>
+				</div>
+				<div class="comment-present smail-holder">
+					<div class="row">
+						<input type="text" class="input" placeholder="">
+						<a href="#" class="open-smail js-coment-smails">
+							<i class="icon-smail"></i>
+						</a>
+					</div>
+					<div class="smails-holder">
+						<img src="img/smails.jpg" alt="">
+					</div>
+				</div>
+				<div class="btn-holder">
+					<a href="#" class="btn">
+						Отправить подарок
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

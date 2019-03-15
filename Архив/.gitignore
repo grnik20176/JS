@@ -1,0 +1,15 @@
+hlis
+images_repo
+.htaccess
+sync/errors__*
+sync/successes__*
+error_log
+robots.txt
+files/images/casino_of_the_month/**
+files/images/games/game_of_the_month/**
+.idea
+.idea/*
+node_modules/
+gulpfile.js
+package-lock.json
+package.json

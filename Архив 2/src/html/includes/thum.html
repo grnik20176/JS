@@ -1,0 +1,71 @@
+<div class="item">
+	<% if ( cut > 22) { 
+		var cut = cut-22;
+	} %>
+
+	<a href="#" class="link">
+		<div class="img-holder">
+			<% if ( change != '') { %>
+				<div class="icon-holder">
+					<div class="left">
+						<div class="item-icon">
+							<i class="icon-cross"></i>
+						</div>
+						<div class="item-icon">
+							<i class="icon-edit-3"></i>
+						</div>
+					</div>
+					<div class="item-icon">
+						<i class="icon-check-2"></i>
+					</div>
+				</div>
+
+				<div class="thumb-info<% if ( cut < 2) {%> personal<%} else if ( cut == 2) {%> active <%} else if ( cut == 3) {%> notactive<%} else if ( cut == 4) {%> process <% } else {%> active<%}%>">
+					<p class="text">
+						<% if ( cut < 2) {%> АКТИВНОЕ (ЛИЧНОЕ)<%} else if ( cut == 2) {%> АКТИВНОЕ<%} else if ( cut == 3) {%> НЕАКТИВНОЕ <%} else if ( cut == 4) {%> 
+							В ОБРАБОТКЕ   (88%)
+							<span class="scale-holder">
+								<span class="scale"></span>
+							</span>
+						<% } else {%>АКТИВНОЕ<%}%>
+					</p>
+				</div>
+			<% } %>
+
+			<img class="img" src="img/img-<%=cut%>.jpg" alt="img">
+			<div class="info-holder">
+				<div class="item-info">
+					<i class="icon-clock"></i>
+					<span class="text">
+						<%=cut%>2:3<%=cut%>
+					</span>
+				</div>
+				<div class="item-info">
+					<i class="icon-calendar"></i>
+					<span class="text">
+						Неделю назад
+					</span>
+				</div>
+				<div class="item-info">
+					<i class="icon-eye"></i>
+					<span class="text">
+						<%=cut%>4,<%=cut%>6
+					</span>
+				</div>
+				<div class="item-info">
+					<i class="icon-like"></i>
+					<span class="text">
+						<%=cut%><%=cut%>%
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="title-item">
+			<p class="title">
+				Красавица Lili Grandfish отсосала болтяру своему балбесу начальнику и вскоре была жёстко выебана в очко.
+			</p>
+		</div>
+	</a>
+
+</div>
+

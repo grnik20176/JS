@@ -1,0 +1,73 @@
+<% var data = {
+  title: "Models",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box view-model">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Порно модель - Gina Valentina
+					</h1>
+				</div>
+			</div>
+			<div class="model-holder">	
+				<div class="model-img">
+					<img src="img/big-model.jpg" alt="12">
+				</div>
+				<div class="info-holder">
+					<div class="model-info">
+						<div class="row">Страна: США</div>
+						<div class="row">Город: Кантон</div>
+						<div class="row">Возраст: 25</div>
+						<div class="row">Рост: 160</div>
+						<div class="row">Вес: 50</div>
+					</div>
+					<div class="model-description">
+						Elsa Jean – горячая блондинка, появившаяся в фильмах категории XXX в 2015 году. Сегодня красотке исполнился 21 год, но жаркая страсть и бесстыдная раскованность, демонстрируемые ею в своих фильмах дадут фору многим более опытным актрисам. Эльза снимается часто, она уже успела порадовать поклонников фильмами с горячим сексом, как с мужчинами, так и с женщинами. Первые шаги Эльза делала в стриптизе, и этот опыт дал ей особую пластику и хорошую акробатическую подготовку, благодаря которым актрисе под силу самые трудные позы. Карьерному успеху юной развратницы сопутствует и активная демонстрация откровенных фотографий в соцсетях.
+					</div>
+					<div class="social-network">
+						<p class="text">Модель в соцсети:</p>
+						<div class="social-items">
+							<div class="item-icon">
+								<i class="icon-twitter"></i>
+							</div>
+							<div class="item-icon">
+								<i class="icon-instagram"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Свежее порно
+					</h1>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="items-list">
+					<% for(var i=1; i<4; i++) {%>
+						<% var data1 = {
+							cut: i,
+							change: ""
+						}; %>
+						<%= _.template(require('./../includes/thum.html'))(data1) %>
+					<% } %>
+				</div>
+			</div>
+			<%= _.template(require('./../includes/pagination.html'))(data) %>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

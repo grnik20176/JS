@@ -1,0 +1,341 @@
+<% var data = {
+  title: "Edit Profile",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+
+
+
+<div class="main-holder">
+	<div class="box">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Редактирование профиля
+					</h1>
+				</div>
+			</div>
+
+			<div class="form-holder user-form edit-profile">
+
+				<p class="inform-text">
+					Для более продуктивного и удачного поиска подходящего Вам партнёра нужно как можно подробней заполнить данную и форму и тогда Вы непременно найдёте того кого искали:) 
+				</p>
+				<div class="edit-icon">
+					<i class="icon-edit-3"></i>
+				</div>
+				<div class="tabs">
+					<ul class="tabs-caption">
+						<li class="tab-btn active">
+							ОСНОВНЫЕ
+						</li>
+						<li class="tab-btn">
+							БЕЗОПАСНОСТЬ
+						</li>
+					</ul>
+					<div class="tabs-content active">
+						<form class="form" action="#">
+							<div class="rows">
+								<p class="title-rows">Аватар</p>
+								<div class="row avatar">
+									<div class="imgs-holde" id="output">
+										<span>
+											<img src="img/user-14.png">
+											<div class="edit-btn">
+												<i class="icon-edit-3"></i>
+												Редактировать
+											</div>
+										</span>
+										<span>
+											<img src="img/user-14.png">
+										</span>
+										<span>
+											<img src="img/user-14.png">
+										</span>
+									</div>
+									<div class="file-holder">
+										<button class="btn">Загрузить фото</button>
+										<input type="file" id="file" class="hidden" name="file" />
+										<button class="btn">Удалить фото</button>
+									</div>
+								</div>
+							</div>
+							
+							<div class="rows">
+								<p class="title-rows">Укажите Ваши личные данные</p>
+								<div class="row">
+									<label class="label">Страна</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row">
+									<label class="label">Город</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row">
+									<label class="label">Вес (кг)</label>
+									<input type="text" class="input small" placeholder="75">
+								</div>
+								<div class="row">
+									<label class="label">Рост (см)</label>
+									<input type="text" class="input small" placeholder="175">
+								</div>
+								<div class="row">
+									<label class="label">Размер члена/груди (см)</label>
+									<input type="text" class="input small" placeholder="25">
+								</div>
+								<div class="row">
+									<label class="label">Ориентация</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Страна</option>
+											<option value="2">Male</option>
+											<option value="3">Female</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Образование</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Образование</option>
+											<option value="2">Образование1</option>
+											<option value="3">Образование2</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Профессия</label>
+									<input type="text" class="input" placeholder="Введите название профессии ">
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Укажите немного о себе</p>
+								<div class="row">
+									<textarea class="input textarea" placeholder="Введите текст"></textarea>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Хобби/интересы:</p>
+								<div class="row wrap">
+									<div class="form-control select-holder">
+										<select name="" id="" class="select" style="width: 100%;">
+											<option value="legno">Секс</option>
+											<option value="vetro">Секс на одну ночь</option>
+											<option value="alluminio">Свинг встречи</option>
+											<option value="alluminio">МЖМ</option>
+											<option value="alluminio">Создание брака</option>
+										</select>
+									</div>
+								
+									<div class="tags-area">
+										<ul>
+											<li class="item-tag">
+												<span class="text">Секс</span>
+												<span class="icon">x</span>
+											</li>
+											<li class="item-tag">
+												<span class="text">Секс на одну ночь</span>
+												<span class="icon">x</span>
+											</li>
+											<li class="item-tag">
+												<span class="text">Свинг встречи</span>
+												<span class="icon">x</span>
+											</li>
+											<li class="item-tag">
+												<span class="text">МЖМ</span>
+												<span class="icon">x</span>
+											</li>
+											<li class="item-tag">
+												<span class="text">Создание брака</span>
+												<span class="icon">x</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Укажите цель знакомства</p>
+								<div class="row">
+									<label class="label">Найти пару для:</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="vetro">Секс на одну ночь</option>
+											<option value="alluminio">Свинг встречи</option>
+											<option value="alluminio">МЖМ</option>
+											<option value="alluminio">Создание брака</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Укажите желательное место встречи</p>
+								<div class="row">
+									<label class="label">Свидание (место)</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">В кафе</option>
+											<option value="2">В кафе1</option>
+											<option value="3">В кафе2</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Укажите степень мобильности</p>
+								<div class="row">
+									<label class="label">Моя мобильность</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Не выезжаю в другие города</option>
+											<option value="2"> Другие города</option>
+											<option value="3">Страна</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Укажите степень материальной поддержки</p>
+								<div class="row">
+									<label class="label">Мат. поддержка</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Не нуждаюсь в средствах</option>
+											<option value="2">Нуждаюсь в средствах</option>
+											<option value="3">Средства</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Опишите желаемые характеристики партнёра для поиска </p>
+								<div class="row">
+									<label class="label">Кого ищу</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Девушку</option>
+											<option value="2">Парня</option>
+											<option value="3">Пара</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Возраст</label>
+									<div class="two-input">
+										<input type="text" class="input small" placeholder="18">
+										<span class="sign">-</span>
+										<input type="text" class="input small" placeholder="45">
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Рост (см)</label>
+									<div class="two-input">
+										<input type="text" class="input small" placeholder="150">
+										<span class="sign">-</span>
+										<input type="text" class="input small" placeholder="175">
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Вес (кг)</label>
+									<div class="two-input">
+										<input type="text" class="input small" placeholder="45">
+										<span class="sign">-</span>
+										<input type="text" class="input small" placeholder="75">
+									</div>
+								</div>
+								<div class="row">
+									<label class="label">Ориентация</label>
+									<div class="select-holder">
+										<select class="select" style="width: 100%;">
+											<option value="1">Гетеросексуал</option>
+											<option value="2">нормал</option>
+											<option value="3">так себе</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="rows">
+								<p class="title-rows">Немного о других предпочтениях к партнёру</p>
+								<div class="row">
+									<textarea class="input textarea" placeholder="Введите текст"></textarea>
+								</div>
+							</div>
+
+							<div class="botton">
+								<button class="btn">
+									Далее
+									<i class="icon-arrows"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="tabs-content">
+						<form class="form" action="#">
+							<div class="rows">
+								<p class="title-rows">Изменить пароль</p>
+								<div class="row">
+									<label class="label">Действующий пароль</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row">
+									<label class="label">Новый пароль</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row">
+									<label class="label">Повторите пароль</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row"> 
+									<label class="label"></label>
+									<div class="botton">
+										<button class="btn">
+											ИЗМЕНИТЬ 
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form" action="#">
+							<div class="rows">
+								<p class="title-rows">Изменить пароль</p>
+								<div class="row">
+									<label class="label">Действующий пароль</label>
+									<span class="old-email">so******@gmail.com</span>
+								</div>
+								<div class="row">
+									<label class="label">Новый e-mail</label>
+									<input type="text" class="input" placeholder="Начните вводить...">
+								</div>
+								<div class="row"> 
+									<label class="label"></label>
+									<div class="botton">
+										<button class="btn">
+											ИЗМЕНИТЬ 
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+						<form class="form" action="#">
+							<div class="rows">
+								<p class="title-rows">Анкета </p>
+								<div class="row"> 
+									<label class="label">Удалить анкету</label>
+									<div class="botton">
+										<button class="btn">
+											УДАЛИТЬ БЕЗВОЗВРАТНО  
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

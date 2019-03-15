@@ -1,0 +1,705 @@
+<% var data = {
+  title: "User",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box profile-list show">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Jason Statham
+					</h1>
+				</div>
+			</div>
+			<div class="three-columns">
+				<div class="panel-holder">
+					<div class="panel">
+						<div class="block-holder user-profile">
+							<div class="avatar-holder">
+								<img src="img/user-14.png" alt="user">
+								<span class="dots-holder js-user-dots">
+									<span></span>
+								</span>
+							</div>
+							<div class="user-info">
+								<div class="user-name js-user-info">
+									<span class="text">Jason Statham</span>
+									<i class="icon-arrow-down"></i>
+								</div>
+								<div class="user-online">
+									<span class="text">Online</span>
+								</div>
+								<div class="rating">
+									(<span class="text">рейтинг</span> — <span class="color">3151</span>)
+								</div>
+							</div>
+							<div class="info-user">
+								<div class="row">
+									Зарегестрирован:
+									<span class="color">19 лет</span>
+								</div>
+								<div class="row">
+									Возраст:
+									<span class="color">31.10.2018</span>
+								</div>
+								<div class="row">
+									Семейное положение:
+									<span class="color">Гетеросексуал</span>
+								</div>
+								<div class="row">
+									Ориентация:
+									<span class="color">Российская Федерация</span>
+								</div>
+								<div class="row">
+									Страна:
+									<span class="color">Не женат</span>
+								</div>
+								<div class="row">
+									Город:
+									<span class="color">Уфа</span>
+								</div>
+
+							</div>
+							<div class="btn-user">
+								<a href="#" class="link">Добавить в друзья</a>
+								<a href="#" class="link">Написать сообщение</a>
+							</div>
+						</div>
+						<div class="block-holder user-presents">
+							<p class="title-block">
+								<span class="bold">Подарки</span>
+								<span class="quantity">3</span>
+							</p>
+							<div class="presents">
+								<div class="present-item">
+									<img src="img/present-1.png" class="present" alt="">
+								</div>
+								<div class="present-item">
+									<img src="img/present-2.png" class="present" alt="">
+								</div>
+								<div class="present-item">
+									<img src="img/present-3.png" class="present" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-column">
+					<div class="block-holder user-nav">
+						<div class="title-holder">
+							<span class="title ">
+								<span class="bold">
+									Jason Statham 
+								</span>
+							</span>
+							<span class="online">
+								Заходил вчера в 21:46
+							</span>
+						</div>
+						<div class="nav-holder">
+							<div class="item-nav">
+								<a href="#" class="link">
+									<span class="quantity">16</span>
+									<span class="text">Друзей</span>
+								</a>
+							</div>
+							<div class="item-nav">
+								<a href="#" class="link">
+									<span class="quantity">24</span>
+									<span class="text">Альбома</span>
+								</a>
+							</div>
+							<div class="item-nav">
+								<a href="#" class="link">
+									<span class="quantity">54</span>
+									<span class="text">Видео</span>
+								</a>
+							</div>
+							<div class="item-nav">
+								<a href="#" class="link">
+									<span class="quantity">452</span>
+									<span class="text">Фото</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="block-holder album-user">
+						<div class="title-holder">
+							<span class="title color">Личные альбомы пользователя Jason</span>
+							<a href="#" class="link">
+								<span class="text">Ко всем альбомам</span>
+								<i class="icon-arrows"></i>
+							</a>
+						</div>
+						<div class="thumbs-list">
+							<% for(var i=1; i<5; i++) {%>
+								<div class="item">
+									<a href="#" class="link">
+										<div class="img-holder">
+											<img class="img" src="img/album-<%=i%>.jpg" alt="">
+											<span class="quantity">
+												<i class="icon-camera-2"></i>
+												<%=i%><%=i%>
+											</span>
+										</div>
+									</a>
+								</div>
+							<% } %>
+
+						</div>
+					</div>
+					<div class="block-holder video-user">
+						<div class="title-holder"> 
+							<span class="title color">Личные видео пользователя Jason</span>
+							<a href="#" class="link">
+								<span class="text">Ко всем видео</span>
+								<i class="icon-arrows"></i>
+							</a>
+						</div>
+						<div class="thumbs-list">
+							<% for(var i=5; i<8; i++) {%>
+								<div class="item">
+									<a href="#" class="link">
+										<div class="img-holder">
+											<img class="img" src="img/img-<%=i%>.jpg" alt="img">
+											<div class="info-holder">
+												<div class="item-info">
+													<i class="icon-clock"></i>
+													<span class="text">
+														<%=i%>2:3<%=i%>
+													</span>
+												</div>
+												<div class="item-info">
+													<i class="icon-eye"></i>
+													<span class="text">
+														<%=i%>4,<%=i%>6
+													</span>
+												</div>
+												<div class="item-info">
+													<i class="icon-like"></i>
+													<span class="text">
+														<%=i%><%=i%>%
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="title-item">
+											<p class="title">
+												Чувак жёстко отымел подругу и кончил ей на сиськи
+											</p>
+										</div>
+									</a>
+								</div>
+							<% } %>
+						</div>
+					</div>
+					<div class="block-holder form-wall">
+						<div class="form-holder">
+							<form class="form" action="#">
+								<div class="user-img">
+									<img src="img/user-14.png" alt="">
+								</div>
+								<div class="row smail-holder">
+									<input type="text" class="input" placeholder="Разместить новость на странице Jason">
+									<div class="btns">
+										<a href="#" class="smail-btn js-coment-smails">
+											<i class="icon-smail"></i>
+										</a>
+										<a href="#" class="photo-btn">
+											<i class="icon-camera-2"></i>
+										</a>
+									</div>
+									<div class="smails-holder">
+										<img src="img/smails.jpg" alt="">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="block-holder user-wall">
+						<div class="tabs-holder">
+							<div class="wall-item open" data-item-open="all">
+								<div class="post-list">
+									<div class="item-post block-holder">
+										<div class="wall-tabs">
+											<div class="item-tab">
+												<a href="#" class="link active" data-item="all">Все записи</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="my">Записи Jason`a</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="friends">Записи оставленные друзьями Jason`a</a>
+											</div>
+										</div>
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-14.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+													<span class="info-post">
+														Добавил 3 новые фото в альбом «Грязная шлюшка»
+													</span>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-4.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div> 
+									<div class="item-post block-holder">
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-2.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-1.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div>
+									<div class="item-post block-holder">
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-3.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-2.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div>
+									<div class="item-post block-holder">
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-4.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-3.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div>
+								</div>
+							</div>
+							<div class="wall-item" data-item-open="my">
+								<div class="post-list">
+									<div class="item-post block-holder">
+										<div class="wall-tabs">
+											<div class="item-tab">
+												<a href="#" class="link active" data-item="all">Все записи</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="my">Записи Jason`a</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="friends">Записи оставленные друзьями Jason`a</a>
+											</div>
+										</div>
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-2.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+													<span class="info-post">
+														Добавил 3 новые фото в альбом «Грязная шлюшка»
+													</span>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-1.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div> 
+								</div>
+							</div>
+							<div class="wall-item" data-item-open="friends">
+								<div class="post-list">
+									<div class="item-post block-holder">
+										<div class="wall-tabs">
+											<div class="item-tab">
+												<a href="#" class="link active" data-item="all">Все записи</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="my">Записи Jason`a</a>
+											</div>
+											<div class="item-tab">
+												<a href="#" class="link" data-item="friends">Записи оставленные друзьями Jason`a</a>
+											</div>
+										</div>
+										<div class="comment-item">
+											<div class="img-holder">
+												<img src="img/user-4.png" alt="">
+											</div>
+											<div class="coments-info">
+												<div class="name-holder">
+													<a href="#" class="user-name">
+														<div class="name">
+															Анжелика Глубокая
+														</div>
+													</a>
+													<div class="user-btns">
+														<i class="icon-arrow-down js-user-menu"></i>
+														<div class="drop-holder">
+															<div class="item-sort">
+																<a href="#" class="link-drop">Смотреть профиль</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Личное сообщение</a>
+															</div>
+															<div class="item-sort">
+																<a href="#" class="link-drop">Добавить в друзья</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="data">
+														2 мар 2018
+												</div>
+											</div>
+										</div>
+										<div class="post-content">
+											<p class="text">Совсем скоро будет доступен новый режим «sosalkino night»!!!!!
+													Следите за новостями :)</p>
+											<img src="img/post-2.png" alt="" class="img">
+										</div>
+										<div class="btn-view">
+											<div class="post-btns">
+												<a href="#" class="btn">
+													<i class="icon-like"></i>
+													<span class="text">160</span>
+												</a>
+												<a href="#" class="btn js-open-comm">
+													<i class="icon-comment"></i>
+													<span class="text">22</span>
+												</a>
+											</div>
+											<div class="view-post">
+												<span class="text">226</span>
+												<i class="icon-eye"></i>
+											</div>
+										</div>
+										<%= _.template(require('./../includes/comments-post.html'))(data) %> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-column">
+					<div class="title-mobile">
+						Обо мне и кого ищу
+					</div>
+					<div class="block-holder about-me">
+						<div class="title-holder">
+							<span class="title color">О Jason</span>
+						</div>
+						<div class="text">
+							Всем привет обитатели портала Sosalkino :) Буду рад общению и возможно даже приглашу кого то на шавуху. Я вобще перспективный, молодой и очень весёлый штрих, если ты красивая малая с настоящими сиськами а не желатиновой хуйнёй то велкам) Люблю спорт, борщ и пороть в жопу. Ps. Писать только от 18 до 45 лет!!!
+						</div>
+					</div>
+					<div class="block-holder pers-inform">
+						<div class="title-holder">
+							<span class="title color">Личные данные:</span>
+						</div>
+						<div class="inform-items">
+							<div class="item-inform">
+								<span class="text">Рост</span>
+								<span class="inform">185 см</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Вес</span>
+								<span class="inform">75 кг</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Размер члена/груди</span>
+								<span class="inform">25 см</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Ориентация</span>
+								<span class="inform">Гетеросексуал</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Образование</span>
+								<span class="inform">Высшее</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Профессия</span>
+								<span class="inform">Ветеринар</span>
+							</div>
+						</div>
+					</div>
+					<div class="block-holder hobby">
+						<div class="title-holder">
+							<span class="title color">Хобби/интересы:</span>
+						</div>
+						<div class="btn-items">
+							<a href="#" class="link">Секс</a>
+							<a href="#" class="link">Музыка </a>
+							<a href="#" class="link">Отдых</a>
+							<a href="#" class="link">Творческая работа</a>
+							<a href="#" class="link">Творчество</a>
+						</div>
+					</div>
+					<div class="block-holder hobby">
+						<div class="title-holder">
+							<span class="title color">Цель знакомства:</span>
+						</div>
+						<p class="text">Для плоцких утех</p>
+					</div>
+					<div class="block-holder search-info">
+						<div class="title-holder">
+							<span class="title color">Кого ищу:</span>
+						</div>
+						<div class="inform-items">
+							<div class="item-inform">
+								<span class="text">Ищу</span>
+								<span class="inform">Девушку</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Возраст</span>
+								<span class="inform">от 18 до 45 лет</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Рост</span>
+								<span class="inform">от 150 до 175 см</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Вес</span>
+								<span class="inform">от 45 до 65 кг</span>
+							</div>
+							<div class="item-inform">
+								<span class="text">Ориентация</span>
+								<span class="inform">Би, гетеро</span>
+							</div>
+						</div>
+						<p class="title-block">Предпочтения к партнёру</p>
+						<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

@@ -1,0 +1,305 @@
+<% var data = {
+  title: "Album",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="container">
+		<div class="title-video">
+			<h1>
+				Gina Valentina - Семейные делишки
+			</h1>
+		</div>
+		<div class="box video-holder">
+			<div class="right">
+				<div class="album-holder">
+					<div class="album">
+						<img src="img/album.jpg" alt="">
+					</div>
+					<div class="swiper-container">
+						<div class="screenshots-holder swiper-wrapper">
+							<% for(var i=1; i<15; i++) {%>
+								<div class="item swiper-slide">
+									<a href="#" class="link">
+										<img class="img" src="img/screen-<%=i%>.jpg" alt="img">
+									</a>
+								</div>
+							<% } %>
+						</div>
+
+						<div class="swiper-scrollbar"></div>
+					</div>
+
+					<div class="screenshots-holder">
+						<% for(var i=1; i<15; i++) {%>
+							<div class="item">
+								<a href="#" class="link">
+									<img class="img" src="img/screen-<%=i%>.jpg" alt="img">
+								</a>
+							</div>
+						<% } %>
+					</div>
+				</div>
+				
+			</div>
+			<div class="left">
+				<div class="user-holder">
+					<span class="text">
+						Альбом пренадлежит пользователю
+					</span>
+					<div class="holder">
+						<div class="img-holder">
+							<img src="img/user-1.png" alt="">
+						</div>
+						<div class="name-holder">
+							<div class="user-name">
+								<a href="#" class="name js-user-menu">
+									Username
+								</a>
+								<div class="user-btns">
+									<i class="icon-arrow-down js-user-menu"></i>
+									<div class="drop-holder">
+										<div class="item-sort">
+											<a href="#" class="link-drop">Смотреть профиль</a>
+										</div>
+										<div class="item-sort">
+											<a href="#" class="link-drop">Личное сообщение</a>
+										</div>
+										<div class="item-sort">
+											<a href="#" class="link-drop">Добавить в друзья</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="album-descrip block-holder">	
+					<p class="description">
+						<span class="text-title">Описание галереи:</span> 
+						Бразильская красотка Gina Valentina совершенно не стесняясь своих гостей поддалась провокации дружка-балбеса который давно питает страсть с темноволосой, кареглазой смуглянке. Бесстыжий парень в порыве страсти расчехлил своего буравчика и с увлечением занялся ублажать жаждущую страсти героиню. Тем временем сидящие рядом друзья горячей парочки тоже не теряли время зря.
+					</p>
+				</div>
+				<div class="album-holder block-holder">	
+					<div class="album-info">
+						<p class="text-title">
+							Информация о галерее
+						</p>
+						<div class="inform">
+							<div class="item-info">
+								<i class="icon-calendar"></i>
+								<span class="text">31.10.18</span>
+							</div>
+							<div class="item-info">
+								<i class="icon-eye"></i>
+								<span class="text">674</span>
+							</div>
+							<div class="item-info">
+								<i class="icon-star"></i> 
+								<span class="text">96%</span>
+							</div>
+							<div class="item-info">
+								<i class="icon-camera"></i>
+								<span class="text">25</span>
+							</div>
+						</div>
+						<div class="rating-info">
+							<div class="rating-fav">
+								<div class="rating-holder">
+									<a href="#" class="btn like">
+										<i class="icon-like"></i>
+										<span class="quantity">
+											127
+										</span>
+									</a>
+									<a href="#" class="btn dislike">
+										<i class="icon-dislike"></i>
+										<span class="quantity">
+											9999
+										</span>
+									</a>
+									<div class="btn-favourites">
+										<a class="btn" href="#">
+											<i class="icon-heart"></i>
+											<span class="quantity">
+												+
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box models-list block-holder">
+					<p class="text">В ролях:</p>
+					<div class="thumbs-holder">
+						<div class="items-list">
+							<% for(var i=1; i<3; i++) {%>
+								<% 
+									let title = ['Markus Dupree aka Алексей Маетный', 'Mick Blue', 'Xander Corvus', 'Charles Dera', 'Kyle Mason', 'Gina Valentina', 'Elsa Jean', 'Johnny Sins', 'Charles Dera'];
+									var cut = i;
+									if ( cut > 9) { 
+										var cut = cut-9;
+									}
+									%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<div class="img-holder">
+											<img class="img" src="img/model-<%=cut%>.jpg" alt="img">
+											<div class="info-holder">
+												<p class="title">
+													<%=title[cut] %>
+												</p>
+												<div class="info-model">
+													<span class="quantity">
+														<%=cut%><%=cut%> Видео
+													</span>	
+													<span class="rating">
+														<%=cut%><%=cut%>%
+													</span>	
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							<% } %>
+						</div>
+					</div>
+					<div class="show-more">
+						<a href="#" class="btn">Ещё</a>
+					</div>
+					<div class="thumbs-holder mobi">
+						<div class="categor-holder">
+							<a href="#" class="row-item">Mick Blue</a>
+							<a href="#" class="row-item">Mick Blue</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="categor-holder block-holder">
+					<div class="row">
+						<p class="row-title">
+							Категории:
+						</p>
+						<a href="#" class="row-item">ЗРЕЛЫЕ МИЛФЫ</a>
+						<a href="#" class="row-item">БЛОНДИНКИ</a>
+						<a href="#" class="row-item">БОЛЬШИЕ СИСЬКИ</a>
+						<a href="#" class="row-item">БРИТАЯ ПИСЬКА</a>
+						<a href="#" class="row-item">ЖЁНЫ</a>
+						<a href="#" class="row-item">ИЗМЕНЫ</a>
+					</div>
+					<div class="row">
+						<p class="row-title">
+							Студия:
+						</p>
+						<a href="#" class="row-item">VIXEN</a>
+					</div>
+				</div>
+
+				<div class="block-holder">
+					<%= _.template(require('./../includes/comments.html'))(data) %> 
+				</div>
+
+			</div>
+		</div>
+		<div class="box albums-list">
+			<div class="container">
+				<div class="headline">
+					<div class="title-holder">
+						<h2 class="title">
+							Популярные альбомы за 3 дня
+						</h2>
+					</div>
+				</div>
+				<div class="thumbs-holder">
+					<div class="items-list">
+						<% for(var i=1; i<5; i++) {%>
+							<% 
+								var cut = i;
+								if ( cut > 9) { 
+									var cut = cut-9;
+								}
+							 %>
+							<div class="item">
+								<a href="#" class="link">
+									<div class="img-holder">
+										<img class="img" src="img/album-<%=cut%>.jpg" alt="img">
+										<div class="info-holder">
+											<p class="title">
+												Gina Valentina, Lily Rader и их лесбийские игры зашли слиlooooooooooooo...
+											</p>
+										</div>
+									</div>
+									<div class="album-info">
+										<div class="models-title">
+											<span class="model">
+												Gina Valentina, 
+											</span>
+											<span class="model">
+												Lily Rader  
+											</span>
+										</div>
+										<div class="info">
+											<div class="item-info">
+												<i class="icon-calendar"></i>
+												<span class="text">
+													31.10.18
+												</span>
+											</div>
+											<div class="item-info">
+												<i class="icon-eye"></i>
+												<span class="text">
+													674
+												</span>
+											</div>
+											<div class="item-info">
+												<i class="icon-camera"></i>
+												<span class="text">
+													25
+												</span>
+											</div>
+											<div class="item-info">
+												<i class="icon-star"></i>
+												<span class="text">
+													96%
+												</span>
+											</div>
+											<div class="item-info">
+												<i class="icon-like"></i>
+												<span class="text">
+													175
+												</span>
+											</div>
+										</div>
+										<div class="categor-holder">
+											<div class="row">
+												<p class="row-title">
+													Студия:
+												</p>
+												<span class="row-item">VIXEN</span>
+											</div>
+											<div class="row">
+												<p class="row-title">
+													Модели на фото:
+												</p>
+												<span class="row-item">GINA VALENTINA</span>
+												<span class="row-item">LILY RADER</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						<% } %>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

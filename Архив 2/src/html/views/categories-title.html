@@ -1,0 +1,281 @@
+<% var data = {
+  title: "Сategories Title",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box categories-list">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Категории по алфавиту
+					</h1>
+				</div>
+				<div class="sort-conten">
+					<a href="#" class="selected active">
+						<span class="text">
+							ФОТО
+						</span>
+					</a>
+					<a href="#" class="selected">
+						<span class="text">
+							ВИДЕО
+						</span>
+					</a>
+				</div>
+				<div class="sort-holder">	
+					<div class="sort">
+						<a href="#" class="selected active">
+							<span class="text">
+								По жанрам
+							</span>
+						</a>
+					</div>
+					<div class="sort">
+						<a href="#" class="selected ">
+							<span class="text">
+								По алфавиту
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="items-list">
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								a
+							</span>
+						</div>
+						<% 
+							let title = ['Азиатское', 'Арабы', 'Аргентинские', 'Анальное', 'Анилингус'];
+						 %>
+						<% for(var i=1; i<title.length; i++) {%>
+							<% 
+								var cut = i;
+							 %>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+					</div>
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								б
+							</span>
+						</div>
+	
+						<% 
+							let title2 = ['БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски', 'БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски'];
+						%>
+						<% for(var i=1; i<title2.length; i++) {%>
+							<% 
+								var cut = i;
+							%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title2[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+
+					</div>
+
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								в
+							</span>
+						</div>
+	
+						<% 
+							let title4 = ['БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски', 'БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски'];
+						%>
+						<% for(var i=1; i<title4.length; i++) {%>
+							<% 
+								var cut = i;
+							%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title4[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+
+					</div>
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								г
+							</span>
+						</div>
+						<% 
+							let title3 = ['Азиатское', 'Арабы', 'Аргентинские', 'Анальное', 'Анилингус'];
+							%>
+						<% for(var i=1; i<title3.length; i++) {%>
+							<% 
+								var cut = i;
+								%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title3[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+
+					</div>
+
+
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								ж
+							</span>
+						</div>
+						<% 
+							let title5 = ['Азиатское', 'Арабы', 'Аргентинские', 'Анальное', 'Анилингус'];
+							%>
+						<% for(var i=1; i<title5.length; i++) {%>
+							<% 
+								var cut = i;
+								%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title5[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+					</div>
+
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								е
+							</span>
+						</div>
+	
+						<% 
+							let title6 = ['БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски', 'БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски'];
+						%>
+						<% for(var i=1; i<title6.length; i++) {%>
+							<% 
+								var cut = i;
+							%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title6[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+
+					</div>
+
+
+
+
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								ж
+							</span>
+						</div>
+	
+						<% 
+							let title8 = ['БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски', 'БДСМ', 'Блондинки', 'Брюнетки', 'Болтливая', 'Большая жопа', 'Большие сиськи', 'Больные', 'Бодрые', 'Бухие', 'Бабуля', 'Баня', 'Бикини', 'Бритые киски'];
+						%>
+						<% for(var i=1; i<title8.length; i++) {%>
+							<% 
+								var cut = i;
+							%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title8[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+					</div>
+					<div class="letter-holder">
+						<div class="item title">
+							<span class="letter">
+								з
+							</span>
+						</div>
+						<% 
+							let title7 = ['Азиатское', 'Арабы', 'Аргентинские', 'Анальное', 'Анилингус'];
+							%>
+						<% for(var i=1; i<title7.length; i++) {%>
+							<% 
+								var cut = i;
+								%>
+	
+							<div class="item">
+								<a href="#" class="link">
+									<span class="title">
+										<%=title7[cut] %>
+									</span>
+									<span class="quantity">
+										<%=cut%><%=cut%>
+									</span>	
+								</a>
+							</div>
+						<% } %>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

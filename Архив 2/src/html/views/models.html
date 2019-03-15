@@ -1,0 +1,83 @@
+<% var data = {
+  title: "Models",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box models-list">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Модели
+					</h1>
+				</div>
+				<div class="search-fotm">
+					<form class="form" action="#">
+						<input type="text" class="input" placeholder="Найти модель...">
+						<a href="#" class="btn-serch">
+							<i class="icon-search"></i>
+						</a>
+					</form>
+				</div>
+				<div class="sort-holder">	
+					<div class="sort">
+						<a href="#" class="selected js-sort">
+							<span class="text">
+								Любого пола
+							</span>
+							<i class="icon-arrow-down"></i>
+						</a>
+						<div class="drop-holder">
+							<div class="item-sort">
+								<a href="#" class="link-drop">Парни</a>
+							</div>
+							<div class="item-sort">
+								<a href="#" class="link-drop">Девушки</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="items-list">
+					<% for(var i=1; i<16; i++) {%>
+						<% 
+							let title = ['Markus Dupree aka Алексей Маетный', 'Mick Blue', 'Xander Corvus', 'Charles Dera', 'Kyle Mason', 'Gina Valentina', 'Elsa Jean', 'Johnny Sins', 'Charles Dera'];
+							var cut = i;
+							if ( cut > 9) { 
+								var cut = cut-9;
+							}
+						 %>
+
+						<div class="item">
+							<a href="#" class="link">
+								<div class="img-holder">
+									<img class="img" src="img/model-<%=cut%>.jpg" alt="img">
+									<div class="info-holder">
+										<p class="title">
+											<%=title[cut] %>
+										</p>
+										<div class="info-model">
+											<span class="quantity">
+												<%=cut%><%=cut%> Видео
+											</span>	
+											<span class="rating">
+												<%=cut%><%=cut%>%
+											</span>	
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					<% } %>
+				</div>
+			</div>
+			<%= _.template(require('./../includes/pagination.html'))(data) %>
+		</div>
+	</div>
+</div>
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 

@@ -1,0 +1,230 @@
+<% var data = {
+  title: "Сategories Title",
+  change:"",
+  user:""
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<div class="main-holder">
+	<div class="box categories-list groups">
+		<div class="container">
+			<div class="headline">
+				<div class="title-holder">
+					<h1 class="title">
+						Категории по алфавиту
+					</h1>
+				</div>
+				<div class="sort-conten">
+					<a href="#" class="selected active">
+						<span class="text">
+							ФОТО
+						</span>
+					</a>
+					<a href="#" class="selected">
+						<span class="text">
+							ВИДЕО
+						</span>
+					</a>
+				</div>
+				<div class="sort-holder">	
+					<div class="sort">
+						<a href="#" class="selected active">
+							<span class="text">
+								По жанрам
+							</span>
+						</a>
+					</div>
+					<div class="sort">
+						<a href="#" class="selected ">
+							<span class="text">
+								По алфавиту
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="thumbs-holder">
+				<div class="category-group">
+					<div class="title-group">
+						Общие категории
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title = ['Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ'];
+							 %>
+	
+	
+							<% for(var i=1; i<title.length; i++) {%>
+								<% 
+									var cut = i;
+								 %>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+						</div>
+					</div>
+				</div>
+				<div class="category-group">
+					<div class="title-group">
+							Волосы
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title2 = ['Блондинки', 'Брюнетки', 'Рыжие', 'Болтливая', 'Длинные волосы', 'Короткие волосы', 'Косички', 'Волосы на пизде', 'Бритые', 'Лысые'];
+							%>
+							<% for(var i=1; i<title2.length; i++) {%>
+								<% 
+									var cut = i;
+								%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title2[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+	
+						</div>
+					</div>
+				</div>
+				<div class="category-group">
+					<div class="title-group">
+						Возраст
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title3 = ['Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ'];
+								%>
+	
+	
+							<% for(var i=1; i<title3.length; i++) {%>
+								<% 
+									var cut = i;
+									%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title3[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+						</div>
+					</div>
+				</div>
+				<div class="category-group">
+					<div class="title-group">
+						Общие категории
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title4 = ['Блондинки', 'Брюнетки', 'Рыжие', 'Болтливая', 'Длинные волосы', 'Короткие волосы', 'Косички', 'Волосы на пизде', 'Бритые', 'Лысые'];
+							%>
+							<% for(var i=1; i<title4.length; i++) {%>
+								<% 
+									var cut = i;
+								%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title4[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+	
+						</div>
+					</div>
+				</div>
+				<div class="category-group">
+					<div class="title-group">
+						Возраст
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title5 = ['Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ', 'Анал', 'БДСМ', 'Вебкамера', 'Гангбанг', 'Групповое', 'Домашнее порно', 'Жёсткое', 'ЖМЖ'];
+								%>
+	
+	
+							<% for(var i=1; i<title5.length; i++) {%>
+								<% 
+									var cut = i;
+									%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title5[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+						</div>
+					</div> 
+				</div>
+				<div class="category-group">
+					<div class="title-group">
+						Особенности тела
+					</div>
+					<div class="items-list">
+						<div class="letter-holder">
+							<% 
+								let title6 = ['Блондинки', 'Брюнетки', 'Рыжие', 'Болтливая', 'Длинные волосы', 'Короткие волосы', 'Косички', 'Волосы на пизде', 'Бритые', 'Лысые'];
+							%>
+							<% for(var i=1; i<title6.length; i++) {%>
+								<% 
+									var cut = i;
+								%>
+		
+								<div class="item">
+									<a href="#" class="link">
+										<span class="title">
+											<%=title6[cut] %>
+										</span>
+										<span class="quantity">
+											<%=cut%><%=cut%> 
+										</span>	
+									</a>
+								</div>
+							<% } %>
+	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %> 
